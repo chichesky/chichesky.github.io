@@ -1,0 +1,67 @@
+/* FOR SMALL MENU */
+@keyframes moveButton {
+  100% {
+    right: 85vw;
+    bottom: 85vh;
+  }
+}
+@keyframes turnArrow {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes moveBackButton {
+  100% {
+    right: 1.5vw;
+    bottom: 1.5vh;
+  }
+}
+@keyframes turnBackArrow {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes menuUp {
+  100% {
+    top: 10vh;
+    left: 10vw;
+  }
+}
+@keyframes menuDown {
+  100% {
+    top: 100vh;
+    left: 100vw;
+  }
+}
+
+/* FOR MENU */
+
+@keyframes menuCome {
+  100% {
+    left:0vw;
+  }
+}
+@keyframes menuFooterCome {
+  100% {
+    top:82vh;
+  }
+}
+
+@keyframes menuLiHover {
+  100% {
+  background-color: var(--roseOrange);
+  text-decoration:;
+  }
+}
+
+.menu {animation: menuCome 2s 1;animation-fill-mode: forwards;}
+.menuFooter {
+  animation: menuFooterCome 2s 1;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.menuList li:hover {
+  animation: menuLiHover 2s;animation-fill-mode: forwards;
+}

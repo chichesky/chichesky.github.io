@@ -1,0 +1,311 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--coldWhite);
+  color: var(--niceBlack);
+  margin:0;
+}
+
+/*_______________________________NAV BAR_____________________________________*/
+nav ul {
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+}
+nav li {
+  text-align: center;
+  display:block;
+  overflow: hidden;
+}
+nav a {
+  font-family: menuFont;
+  text-decoration: none;
+}
+/*_______FOR SMALL SCREENS___________________________________________________*/
+/*Button*/
+.menuButton
+{
+  display: none;
+  position: fixed;
+  right: 1.5vw;
+  bottom: 1.5vh;
+  cursor: pointer;
+  z-index: 1;
+}
+  .Arrow {
+    display: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/up-arrow.svg");
+    background-size: cover;
+    opacity: 1;
+  }
+  .Arrow {
+    filter: invert(99%) sepia(68%) saturate(413%) hue-rotate(70deg) brightness(95%) contrast(94%);
+  }
+  .Arrow:hover{
+    filter: invert(92%) sepia(10%) saturate(700%) hue-rotate(50deg) brightness(97%) contrast(93%);
+  }
+  .Arrow:active {
+    filter: invert(94%) sepia(56%) saturate(822%) hue-rotate(303deg) brightness(93%) contrast(114%);
+  }
+
+/*Small Menu*/
+.smallMenu {
+  display:none;
+  position: fixed;
+  top: 100vh;
+  left: 100vw;
+  width: 90vw;
+  height:  90vh;
+  opacity: 0.85;
+}
+.smallMenuHeader {
+  display: fixed;
+  width: 90vw;
+  height: 10vh;
+  font-size:6.5vh;
+  overflow:hidden;
+}
+.smallMenuList{
+  display: fixed;
+  width: 90vw;
+  height: 60vh;
+}
+.smallMenuList li {
+  background-color: var(--freshGreen);
+  width: 60vw;
+  height: 8vh;
+  margin-top:15px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-top: 1.5vh;
+}
+.smallMenuList li:hover {
+  background-color: var(--mintFreshGreen);
+}
+.smallMenuList li:active {
+  background-color: var(--roseOrange);
+}
+.smallMenuList a {
+  font-size: 4.7vh;
+  color: var(--niceBlack);
+}
+.smallMenuFooter {
+  background-image: url(../assets/flower.svg);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-position: center;
+  position: absolute;
+  width: 90vw;
+  height: 18vh;
+  top:63vh;
+}
+/*_______FOR WIDE SCREENS___________________________________________________*/
+.menu {
+  display:none;
+  position: fixed;
+  background-color: var(--mintFreshGreen);
+  height: 100vh;
+  top: 0vh;
+  left:-25vw;
+  margin:0;
+  padding: 0;
+}
+.menuHeader {
+  position:fixed;
+  width: inherit;
+  height: auto;
+  font-size:10vh;
+  top:5vh;
+}
+.menuList {
+  position:fixed;
+  top:25vh;
+  height: 60vh;
+  width: inherit;
+}
+.menuList ul {
+    background-color: var(--freshGreen);
+}
+.menuList li {
+  border: 0.5vh solid var(--mintFreshGreen);
+  height: 4vw;
+  padding-top:1.15vw;
+  padding-bottom: 1.15vw;
+}
+.menuList a {
+  font-size: 2.7vw;
+  color:var(--niceBlack);
+}
+.menuFooter {
+  position:fixed;
+  top:100vh;
+  background-image: url(../assets/flower_hearhRose.svg);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-position: center;
+  display:fixed;
+  height: 15vh;
+  width: inherit;
+}
+/* __________________________________End______________________________________*/
+
+/*_______________________________MAIN_________________________________________*/
+
+main {
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  top:0;
+}
+
+content {
+  position: relative;
+  top: 10vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*___________________________Responsive Desing Area___________________________*/
+
+  /* For Small Screen Devices */
+@media only screen and (max-device-width: 600px) {
+/* NavBar */
+  .menuButton{
+    display: block;
+    width: 13vw;
+    height: 13vw;
+  }
+  .smallMenu{
+    display:block;
+  }
+/*main*/
+  main {
+    width: 100vw;
+  }
+}
+
+  /* For Medium Screen Devices */
+@media only screen and (min-device-width: 600px) and (max-device-width: 900px) {
+/* NavBar */
+  .menuButton{
+    display: block;
+    width: 10vw;
+    height: 10vw;
+  }
+  .smallMenu{
+    display:block;
+  }
+/*main*/
+  main {
+    width: 100vw;
+  }
+}
+
+
+
+  /* For Wide Screen Devices*/
+@media only screen and (min-device-width: 900px) {
+    /* For Small Window Size */
+  @media only screen and (max-width:600px) {
+    /* NavBar */
+      .menuButton{
+      display: block;
+      width: 13vw;
+      height: 13vw;
+    }
+    .smallMenu{
+      display:block;
+    }
+  /*main*/
+    main {
+      width: 100vw;
+    }
+  }
+    /* For Medium Window Size */
+  @media only screen and (min-width: 600px) and (max-width: 900px) {
+    /* NavBar */
+      .menuButton{
+      display: block;
+      width: 10vw;
+      height: 10vw;
+    }
+    .smallMenu{
+      display:block;
+    }
+    /*main*/
+    main {
+      width: 100vw;
+    }
+  }
+
+    /*For Large Window Size */
+  @media only screen and (min-width: 900px) and (max-width: 1300px) {
+  .menu {
+    display:block;
+    width: 25vw;
+  }
+/*main*/
+  main {
+    width: 75vw;
+    left:25vw;
+  }
+}
+    /*For Larger Window Size */
+  @media only screen and (min-width: 1300px) and (max-width: 1600px) {
+  .menu {
+    display:block;
+    width: 20vw;
+  }
+  /*main*/
+  main {
+    width: 80vw;
+    left:20vw;
+  }
+}
+  /*For Huge Window Size */
+  @media only screen and (min-width: 1600px) {
+  .menu {
+    display:block;
+    width: 15vw;
+  }
+  .menuList a {
+    font-size: 2vw;
+  }
+  .menuList li {
+    height: 3vw;
+  }
+  /*main*/
+  main {
+    width: 85vw;
+    left:15vw;
+  }
+}
+/*__________________________________End_______________________________________*/

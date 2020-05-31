@@ -1,0 +1,27 @@
+:root {
+  /*1st palete*/
+  --coldWhite: #f7f7f7;
+  --freshGreen: #cceabb;
+  --mintFreshGreen: #bdebd4;
+  --niceBlack: #3f3f44;
+  --roseOrange: #fdcb9e;
+
+
+}
+
+@font-face {
+  font-family: menuFont;
+  src: url(../assets/MajorMonoDisplay-Regular.ttf);
+}
+
+/*
+
+freshGreen:	rgb(204, 234, 187)
+filter: invert(99%) sepia(68%) saturate(413%) hue-rotate(70deg) brightness(95%) contrast(94%);
+
+mintFreshGreen:	rgb(189, 235, 212)
+filter: invert(92%) sepia(10%) saturate(700%) hue-rotate(50deg) brightness(97%) contrast(93%);
+
+roseOrange: 	rgb(253, 203, 158)
+filter: invert(94%) sepia(56%) saturate(822%) hue-rotate(303deg) brightness(93%) contrast(114%);
+*/
